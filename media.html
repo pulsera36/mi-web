@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media & Events — Miguel de Beistegui</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/* ===== GENERAL ===== */
+
+.essay{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* ===== SECTION ===== */
+
+.section-label{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #888;
+    margin: 80px 0 10px;
+    text-transform: uppercase;
+}
+
+/* ===== BLOCK ===== */
+
+.block{
+    display: flex;
+    gap: 50px;
+    margin: 70px 0;
+    align-items: center;
+}
+
+.block.reverse{
+    flex-direction: row-reverse;
+}
+
+/* ===== MEDIA ===== */
+
+.block-media{
+    flex: 1;
+}
+
+.video-link{
+    position: relative;
+}
+
+.video-link img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.play-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding: 10px 18px;
+}
+
+/* ===== TEXT ===== */
+
+.block-text{
+    flex: 1;
+}
+
+.block-text h2{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.meta{
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.description{
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* ===== TEXT LINKS ===== */
+
+.text-item{
+    margin: 18px 0;
+}
+
+.text-item a{
+    text-decoration: none;
+    color: #111;
+    font-family: 'Inter', sans-serif;
+}
+
+.text-item a:hover{
+    text-decoration: underline;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 900px){
+    .block,
+    .block.reverse{
+        flex-direction: column;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="index.html">Home</a>
+
+<div class="dropdown">
+<a href="#">About</a>
+<div class="dropdown-content">
+<a href="about.html#about-me">About me</a>
+<a href="about.html#autobiography">A Brief Philosophical Autobiography</a>
+</div>
+</div>
+
+<a href="itinerary.html">Philosophical Itinerary</a>
+<a href="books.html">Books</a>
+
+<div class="dropdown">
+<a href="research.html">Research</a>
+<div class="dropdown-content">
+<a href="research.html#invited-papers">Invited Papers & Lectures</a>
+<a href="research.html#organization">Organization of Conferences</a>
+<a href="research.html#book-chapters">Book Chapters</a>
+<a href="research.html#articles">Articles in Academic Journals</a>
+<a href="research.html#translations">Translations</a>
+</div>
+</div>
+
+<a href="media.html">Media & Events</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+
+<div class="hero-text">
+<h1>Miguel <strong>de Beistegui</strong></h1>
+<p class="hero-subtitle">Philosopher</p>
+</div>
+
+<section class="essay">
+
+<!-- DESIRE -->
+<div class="section-label">Desire & Subjectivity</div>
+
+<div class="block">
+<div class="block-media">
+<div class="video-link">
+<a href="https://www.youtube.com/watch?v=CwNdI3jIn1A&t=913s" target="_blank">
+<img src="https://img.youtube.com/vi/CwNdI3jIn1A/maxresdefault.jpg">
+<div class="play-button">▶</div>
+</a>
+</div>
+</div>
+
+<div class="block-text">
+<h2>Deleuze et le désir</h2>
+<p class="meta">La Maison de la Philosophie, 2018</p>
+<p class="description">
+A conceptual analysis of desire as production, engaging Deleuze against psychoanalytic and metaphysical traditions.
+</p>
+</div>
+</div>
+
+<!-- CRISIS -->
+<div class="section-label">Crisis & Contemporary World</div>
+
+<div class="block reverse">
+<div class="block-media">
+<div class="video-link">
+<a href="https://www.youtube.com/watch?v=5jfOwq6kHOo" target="_blank">
+<img src="https://img.youtube.com/vi/5jfOwq6kHOo/maxresdefault.jpg">
+<div class="play-button">▶</div>
+</a>
+</div>
+</div>
+
+<div class="block-text">
+<h2>The World in Crisis</h2>
+<p class="meta">LSE, 2024</p>
+<p class="description">
+A reflection on crisis as a structural feature of modernity, rather than an episodic disruption.
+</p>
+</div>
+</div>
+
+<div class="block">
+<div class="block-media">
+<div class="video-link">
+<a href="https://www.youtube.com/watch?v=cLiV4CxThZU" target="_blank">
+<img src="https://img.youtube.com/vi/cLiV4CxThZU/maxresdefault.jpg">
+<div class="play-button">▶</div>
+</a>
+</div>
+</div>
+
+<div class="block-text">
+<h2>A Philosophy of Crisis</h2>
+<p class="meta">Interview with Alexis Papazoglou, 2024</p>
+<p class="description">
+An articulation of crisis as a construction through which we understand, experience and order the world in contemporary societies.
+</p>
+</div>
+</div>
+
+<div class="block reverse">
+<div class="block-media">
+<div class="video-link">
+<a href="https://www.youtube.com/watch?v=_9IKnXIWjcE" target="_blank">
+<img src="https://img.youtube.com/vi/_9IKnXIWjcE/hqdefault.jpg">
+<div class="play-button">▶</div>
+</a>
+</div>
+</div>
+
+<div class="block-text">
+<h2>The Genealogy of Crisis</h2>
+<p class="meta">Dialogue with Johannes Niederhauser</p>
+<p class="description">
+A historical reconstruction of the concept of crisis, from medical discourse to political modernity.
+</p>
+</div>
+</div>
+
+<!-- DIALOGUE -->
+<div class="section-label">Philosophy in Dialogue</div>
+
+<div class="block">
+<div class="block-media">
+<div class="video-link">
+<a href="https://www.youtube.com/watch?v=gI0D15U4tk8&t=1500s" target="_blank">
+<img src="https://img.youtube.com/vi/gI0D15U4tk8/maxresdefault.jpg">
+<div class="play-button">▶</div>
+</a>
+</div>
+</div>
+
+<div class="block-text">
+<h2>Conversation avec Michel Houellebecq</h2>
+<p class="meta">Madrid, 2025</p>
+<p class="description">
+A dialogue between philosophy and literature, and the conditions of contemporary life.
+</p>
+</div>
+</div>
+
+<!-- HEIDEGGER -->
+<div class="section-label">Heidegger</div>
+
+<div class="block reverse">
+<div class="block-media">
+<div class="video-link">
+<a href="https://www.youtube.com/watch?v=PShflHFKzLk" target="_blank">
+<img src="https://img.youtube.com/vi/PShflHFKzLk/hqdefault.jpg">
+<div class="play-button">▶</div>
+</a>
+</div>
+</div>
+
+<div class="block-text">
+<h2>BBC Interview on Heidegger</h2>
+<p class="meta">Broadcast, July 1999</p>
+<p class="description">
+A televised discussion addressing Heidegger’s philosophy and political implications.
+</p>
+</div>
+</div>
+
+</section>
+
+<!-- TEXTUAL + AUDIO INTERVENTIONS -->
+
+<section class="essay">
+
+<div class="section-label">Interviews & Conversations</div>
+
+<div class="text-item">
+<a href="http://www.materialifoucaultiani.org/en/materiali/altri-materiali/59-forum-qmichel-foucault-e-le-resistenzeq/148-materiali-foucaultiani-miguel-de-beistegui-2.html" target="_blank">
+Foucault and Resistance — Materiali Foucaultiani (2011)
+</a>
+</div>
+
+<div class="text-item">
+<a href="https://newbooksnetwork.com/miguel-de-beistegui-aesthetics-after-metaphysics-from-mimesis-to-metaphor-routledge-2009" target="_blank">
+Aesthetics After Metaphysics — New Books in Philosophy (2012)
+</a>
+</div>
+
+<div class="text-item">
+<a href="http://figureground.org/interview-with-miguel-de-beistegui/" target="_blank">
+Interview with Laureano Ralón — Figure/Ground (2016)
+</a>
+</div>
+
+<div class="text-item">
+<a href="https://www.3-16am.co.uk/articles/who-are-we-today-foucault-proust-deleuze" target="_blank">
+Who Are We Today? — 3:AM Magazine
+</a>
+</div>
+
+<div class="text-item">
+<a href="https://us02web.zoom.us/rec/play/K-D19wKWE3V6XcmFsPEsZ_YV9DucPTiSFCcU5Ze-4-YtNw4sNNvpUqMI9Zadc9gSCHCBAxaJKqbzDhX6._aNBP4OT8YJdl7JN" target="_blank">
+Lacan: A Genealogy — Freud Museum (2021)
+</a>
+</div>
+
+<div class="section-label">Written Interventions</div>
+
+<div class="text-item">
+<a href="https://blogs.lse.ac.uk/europpblog/2024/10/17/beware-of-crisis/" target="_blank">
+Beware of Crisis — LSE Blog (2024)
+</a>
+</div>
+
+<div class="text-item">
+<a href="https://www.liberation.fr/idees-et-debats/tribunes/les-anti-woke-et-le-virus-de-la-betise-20220115_SUKIWMXWMVHL3GYAVYR6Q7R3HE/" target="_blank">
+Les “anti-woke” et le virus de la bêtise — Libération (2022)
+</a>
+</div>
+
+</section>
+
+</main>
+
+</body>
+</html>

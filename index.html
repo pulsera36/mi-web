@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miguel de Beistegui</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* HERO SECTION OPTIMIZADA */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.hero-text {
+    flex: 1 1 55%;
+    max-width: 700px;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.hero-text h1 span {
+    font-weight: 600;
+}
+
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #444444;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.hero-welcome {
+    font-size: 18px;
+    margin-top: 80px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Imagen hero limpia */
+.hero-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+/* Latest book */
+.latest-book {
+    margin-top: 50px;
+}
+
+.latest-book hr {
+    border: none;
+    border-top: 1px solid #dcdcdc;
+    margin: 20px 0;
+}
+
+.book-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.book-cover {
+    width: 180px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.book-cover:hover {
+    transform: scale(1.03);
+}
+
+.book-text {
+    flex: 1 1 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+    color: #111;
+}
+
+.book-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* UPCOMING EVENTS */
+.upcoming-events {
+    margin-top: 40px;
+}
+
+.upcoming-events hr {
+    border: none;
+    border-top: 1px solid #dcdcdc;
+    margin: 20px 0;
+}
+
+.upcoming-events ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.upcoming-events li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        justify-content: center;
+    }
+
+    .book-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .book-text {
+        text-align: center;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- MENU SUPERIOR EXACTO -->
+<header>
+<nav>
+    <a href="index.html">Home</a>
+
+    <div class="dropdown">
+        <a href="#">About</a>
+        <div class="dropdown-content">
+            <a href="about.html#about-me">About me</a>
+            <a href="about.html#autobiography">A Brief Philosophical Autobiography</a>
+        </div>
+    </div>
+
+    <a href="itinerary.html">Philosophical Itinerary</a>
+    <a href="books.html">Books</a>
+
+    <div class="dropdown">
+        <a href="research.html">Research</a>
+        <div class="dropdown-content">
+            <a href="research.html#invited-papers">Invited Papers & Lectures</a>
+            <a href="research.html#organization">Organization of Conferences</a>
+            <a href="research.html#book-chapters">Book Chapters</a>
+            <a href="research.html#articles">Articles in Academic Journals</a>
+            <a href="research.html#translations">Translations</a>
+        </div>
+    </div>
+
+    <a href="media.html">Media & Events</a>
+    <a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<!-- HERO SIMPLIFICADO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Miguel <span>de Beistegui</span></h1>
+        <p class="hero-subtitle">Philosopher</p>
+        <p class="hero-welcome">
+            Welcome to my website, where you will find detailed information about my academic career, publications, projects, media contributions, and forthcoming events.
+        </p>
+    </div>
+    <div class="hero-image">
+        <img src="images/autobiography.jpg" alt="Miguel de Beistegui">
+    </div>
+</section>
+
+<!-- LATEST BOOK -->
+<section class="home-section latest-book">
+    <hr>
+    <p class="section-title">LATEST BOOK</p>
+    <div class="book-item">
+        <img src="images/crisis_cover.jpg" alt="Crisis: A Critique" class="book-cover">
+        <div class="book-text">
+            <h2>Crisis: A Critique</h2>
+            <p>Drawing on examples from economics, social movements, pandemics, genocides, ecological devastation, and discourses from law to political economy and eco-criticism, this work engages with authors who have questioned the connection between crisis and critique. It aims to recalibrate our language and thought for an age of seemingly unrelenting catastrophe.</p>
+            <a href="books.html#crisis-book">More about this book</a>
+        </div>
+    </div>
+</section>
+
+<!-- RECENT EVENTS -->
+<section class="home-section upcoming-events">
+    <hr>
+    <p class="section-title">RECENT EVENTS</p>
+
+    <div class="events-list">
+
+        <p>
+            A conversation with Michel Houellebecq, Festival de las Ideas, Madrid, 21 September 2025.<br>
+            <a href="https://www.youtube.com/watch?v=QoNbp21p0Gw" target="_blank">Watch video</a>
+        </p>
+
+        <p>
+            “Philosophy in Times of Crisis” (in Spanish). Annual Lecture of the Barcelona Network for Political and Social Theory, followed by a conversation with Marina Garcés. CCCB, Barcelona, 26 January 2026.<br>
+            <a href="https://www.cccb.org/es/w/videos/la-filosofia-en-tiempos-de-crisis" target="_blank">Watch lecture</a>
+        </p>
+
+        <p>
+            “Crisis: A Contested Concept” (in Spanish). A panel discussion on <em>Crisis: A Critique</em>, with Professors Laura Llevadot, Peter Wagner, Gavin Rae, and Camil Ungureanu. CCCB, Barcelona, 27 January 2026.<br>
+            <a href="https://www.cccb.org/es/w/videos/crisis-un-concepto-en-disputa" target="_blank">Watch discussion</a>
+        </p>
+
+    </div>
+</section>
+
+</body>
+</html>

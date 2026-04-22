@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact — Miguel de Beistegui</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+                <a href="about.html#about-me">About me</a>
+                <a href="about.html#autobiography">A Brief Philosophical Autobiography</a>
+            </div>
+        </div>
+
+        <a href="itinerary.html">Philosophical Itinerary</a>
+        <a href="books.html">Books</a>
+
+        <div class="dropdown">
+            <a href="research.html">Research</a>
+            <div class="dropdown-content">
+                <a href="research.html#invited-papers">Invited Papers & Lectures</a>
+                <a href="research.html#organization">Organization of Conferences</a>
+                <a href="research.html#book-chapters">Book Chapters</a>
+                <a href="research.html#articles">Articles in Academic Journals</a>
+                <a href="research.html#translations">Translations</a>
+            </div>
+        </div>
+
+        <a href="media.html">Media & Events</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Miguel <span>de Beistegui</span></h1>
+        <p class="hero-subtitle">Philosopher</p>
+    </div>
+</section>
+
+<section class="contact">
+
+<p><strong>Email:</strong> migueldebeistegui@mac.com</p>
+
+<p><strong>Affiliation:</strong><br>
+ICREA Research Professor<br>
+Universitat Pompeu Fabra, Barcelona</p>
+
+<form class="contact-form" action="mailto:migueldebeistegui@mac.com" method="post" enctype="text/plain">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <button type="submit">Send message</button>
+
+</form>
+
+</section>
+
+</main>
+
+</body>
+</html>
