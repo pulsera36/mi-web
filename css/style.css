@@ -49,6 +49,7 @@ nav .dropdown {
     display: inline-block;
 }
 
+
 nav .dropdown-content {
     display: none;
     position: absolute;
@@ -76,6 +77,31 @@ nav .dropdown:hover .dropdown-content {
 
 nav .dropdown-content a:hover {
     background-color: #f0f0f0;
+}
+
+@media (max-width: 900px) {
+
+    nav .dropdown {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .dropdown-content {
+        position: static;     
+        box-shadow: none;     
+        min-width: auto;
+        background: transparent;
+        display: none;
+    }
+
+    nav .dropdown.open .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
 }
 
 /* --- HERO (GLOBAL) --- */
@@ -967,4 +993,36 @@ mark{
         gap: 8px;
     }
 
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 900px) {
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav a,
+    header nav .dropdown {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav.open a,
+    header nav.open .dropdown {
+        display: block;
+    }
 }
