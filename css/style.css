@@ -1026,3 +1026,23 @@ mark{
         display: block;
     }
 }
+
+/* ===== PHILOSOPHY X ===== */
+
+.philosophyx-media{
+    flex: 1.8;
+}
+
+.philosophyx-media img{
+    width: 100%;
+    max-width: 980px;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: 0.25s ease;
+}
+
+.philosophyx-media img:hover{
+    transform: translateY(-2px);
+}
